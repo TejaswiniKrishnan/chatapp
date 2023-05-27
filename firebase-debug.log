@@ -1,0 +1,204 @@
+[debug] [2023-05-27T18:12:52.303Z] ----------------------------------------------------------------------
+[debug] [2023-05-27T18:12:52.304Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tejaswini\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-27T18:12:52.305Z] CLI Version:   12.2.1
+[debug] [2023-05-27T18:12:52.305Z] Platform:      win32
+[debug] [2023-05-27T18:12:52.305Z] Node Version:  v18.16.0
+[debug] [2023-05-27T18:12:52.306Z] Time:          Sat May 27 2023 23:42:52 GMT+0530 (India Standard Time)
+[debug] [2023-05-27T18:12:52.306Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-27T18:12:52.310Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-27T18:12:52.311Z] > authorizing via signed-in user (tejaswinikrishnan3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\chattos
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-27T18:13:46.232Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-05-27T18:13:47.119Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-05-27T18:13:47.119Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chattos-project (Vlinx) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-05-27T18:13:51.205Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-05-27T18:13:51.205Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:13:53.146Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firebasedatabase.googleapis.com 200
+[debug] [2023-05-27T18:13:53.146Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-05-27T18:13:53.148Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/chattos-project/locations/-/instances/chattos-project-default-rtdb [none]
+[debug] [2023-05-27T18:13:53.989Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/chattos-project/locations/-/instances/chattos-project-default-rtdb 200
+[debug] [2023-05-27T18:13:53.990Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/chattos-project/locations/-/instances/chattos-project-default-rtdb {"name":"projects/561090745940/locations/asia-southeast1/instances/chattos-project-default-rtdb","project":"projects/561090745940","databaseUrl":"https://chattos-project-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-05-27T18:14:03.731Z] >>> [apiv2][query] GET https://chattos-project-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-05-27T18:14:04.252Z] <<< [apiv2][status] GET https://chattos-project-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-05-27T18:14:04.252Z] <<< [apiv2][body] GET https://chattos-project-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for chattos-project-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-05-27T18:14:04.256Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firestore.googleapis.com [none]
+[debug] [2023-05-27T18:14:04.256Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firestore.googleapis.com x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:06.329Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firestore.googleapis.com 200
+[debug] [2023-05-27T18:14:06.330Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/firestore.googleapis.com [omitted]
+[debug] [2023-05-27T18:14:06.330Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default) [none]
+[debug] [2023-05-27T18:14:08.381Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default) 200
+[debug] [2023-05-27T18:14:08.381Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default) {"name":"projects/chattos-project/databases/(default)","uid":"1e62b1a3-b771-4178-ab39-a097cb18f763","createTime":"2023-05-27T18:10:06.786860Z","updateTime":"2023-05-27T18:10:06.786860Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMyf+o6Nlv8CMOrblayMlv8C"}
+[debug] [2023-05-27T18:14:08.381Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-05-27T18:14:08.381Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-27T18:14:08.381Z] > authorizing via signed-in user (tejaswinikrishnan3@gmail.com)
+[debug] [2023-05-27T18:14:08.382Z] [iam] checking project chattos-project for permissions ["firebase.projects.get"]
+[debug] [2023-05-27T18:14:08.382Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions [none]
+[debug] [2023-05-27T18:14:08.382Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:08.382Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-27T18:14:10.012Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions 200
+[debug] [2023-05-27T18:14:10.012Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-05-27T18:14:14.681Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chattos-project/releases pageSize=10&pageToken=
+[debug] [2023-05-27T18:14:16.569Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chattos-project/releases 200
+[debug] [2023-05-27T18:14:16.569Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chattos-project/releases {"releases":[{"name":"projects/chattos-project/releases/cloud.firestore","rulesetName":"projects/chattos-project/rulesets/c33072b7-dce1-4c8d-9e5c-827b6f7abd44","createTime":"2023-05-27T18:10:15.638441Z","updateTime":"2023-05-27T18:10:15.638441Z"}]}
+[debug] [2023-05-27T18:14:16.570Z] Found ruleset: projects/chattos-project/rulesets/c33072b7-dce1-4c8d-9e5c-827b6f7abd44
+[debug] [2023-05-27T18:14:16.570Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chattos-project/rulesets/c33072b7-dce1-4c8d-9e5c-827b6f7abd44 [none]
+[debug] [2023-05-27T18:14:18.088Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chattos-project/rulesets/c33072b7-dce1-4c8d-9e5c-827b6f7abd44 200
+[debug] [2023-05-27T18:14:18.088Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chattos-project/rulesets/c33072b7-dce1-4c8d-9e5c-827b6f7abd44 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-05-27T18:14:20.210Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-05-27T18:14:20.212Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-05-27T18:14:21.901Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-05-27T18:14:21.901Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-05-27T18:14:21.907Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-05-27T18:14:21.907Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chattos-project/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/chattos-project/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-05-27T18:14:21.909Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-27T18:14:21.909Z] > authorizing via signed-in user (tejaswinikrishnan3@gmail.com)
+[debug] [2023-05-27T18:14:21.909Z] [iam] checking project chattos-project for permissions ["firebase.projects.get"]
+[debug] [2023-05-27T18:14:21.909Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions [none]
+[debug] [2023-05-27T18:14:21.909Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:21.909Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-27T18:14:22.321Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions 200
+[debug] [2023-05-27T18:14:22.321Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chattos-project:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-27T18:14:22.321Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-05-27T18:14:22.321Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:22.323Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-05-27T18:14:22.323Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:23.151Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com 200
+[debug] [2023-05-27T18:14:23.151Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-05-27T18:14:23.152Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-05-27T18:14:23.152Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:24.352Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/runtimeconfig.googleapis.com 200
+[debug] [2023-05-27T18:14:24.352Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-05-27T18:14:24.353Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-05-27T18:14:24.353Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-05-27T18:14:34.357Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-05-27T18:14:34.357Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chattos-project
+[debug] [2023-05-27T18:14:36.174Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com 200
+[debug] [2023-05-27T18:14:36.174Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chattos-project/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-05-27T18:18:50.172Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-05-27T18:18:50.522Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-05-27T18:18:50.522Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.22.1","browserURL":"https://www.gstatic.com/firebasejs/9.22.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.22.1/firebase.tgz"},"live":{"version":"9.22","browserURL":"https://www.gstatic.com/firebasejs/live/9.22/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.22/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.22.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.22.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.22.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.22.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.22.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.22.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.22.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.22.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.22.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.22.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming D:\chattos is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1019989397&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-05-27T18:18:55.909Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-05-27T18:18:55.909Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-05-27T18:18:56.794Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-05-27T18:18:56.795Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-05-27T18:18:56.799Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-05-27T18:18:57.418Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-05-27T18:18:57.418Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"TejaswiniKrishnan","id":124782630,"node_id":"U_kgDOB3AIJg","avatar_url":"https://avatars.githubusercontent.com/u/124782630?v=4","gravatar_id":"","url":"https://api.github.com/users/TejaswiniKrishnan","html_url":"https://github.com/TejaswiniKrishnan","followers_url":"https://api.github.com/users/TejaswiniKrishnan/followers","following_url":"https://api.github.com/users/TejaswiniKrishnan/following{/other_user}","gists_url":"https://api.github.com/users/TejaswiniKrishnan/gists{/gist_id}","starred_url":"https://api.github.com/users/TejaswiniKrishnan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/TejaswiniKrishnan/subscriptions","organizations_url":"https://api.github.com/users/TejaswiniKrishnan/orgs","repos_url":"https://api.github.com/users/TejaswiniKrishnan/repos","events_url":"https://api.github.com/users/TejaswiniKrishnan/events{/privacy}","received_events_url":"https://api.github.com/users/TejaswiniKrishnan/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":5,"public_gists":0,"followers":0,"following":0,"created_at":"2023-02-08T10:49:42Z","updated_at":"2023-05-27T04:25:15Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":17,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as TejaswiniKrishnan 
+[info] 
+[debug] [2023-05-27T18:20:08.570Z] >>> [apiv2][query] GET https://api.github.com/repos/Vlinx/repository/actions/secrets/public-key type=owner
+[debug] [2023-05-27T18:20:09.131Z] <<< [apiv2][status] GET https://api.github.com/repos/Vlinx/repository/actions/secrets/public-key 404
+[debug] [2023-05-27T18:20:09.132Z] <<< [apiv2][body] GET https://api.github.com/repos/Vlinx/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-05-27T18:26:32.381Z] >>> [apiv2][query] GET https://api.github.com/repos/Vlinx/repository/actions/secrets/public-key type=owner
+[debug] [2023-05-27T18:26:33.078Z] <<< [apiv2][status] GET https://api.github.com/repos/Vlinx/repository/actions/secrets/public-key 404
+[debug] [2023-05-27T18:26:33.078Z] <<< [apiv2][body] GET https://api.github.com/repos/Vlinx/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-05-27T18:27:07.892Z] >>> [apiv2][query] GET https://api.github.com/repos/chattos/repository/actions/secrets/public-key type=owner
+[debug] [2023-05-27T18:27:08.431Z] <<< [apiv2][status] GET https://api.github.com/repos/chattos/repository/actions/secrets/public-key 404
+[debug] [2023-05-27T18:27:08.431Z] <<< [apiv2][body] GET https://api.github.com/repos/chattos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-05-27T18:28:40.242Z] >>> [apiv2][query] GET https://api.github.com/repos/vlinx/repository/actions/secrets/public-key type=owner
+[debug] [2023-05-27T18:28:40.854Z] <<< [apiv2][status] GET https://api.github.com/repos/vlinx/repository/actions/secrets/public-key 404
+[debug] [2023-05-27T18:28:40.854Z] <<< [apiv2][body] GET https://api.github.com/repos/vlinx/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
